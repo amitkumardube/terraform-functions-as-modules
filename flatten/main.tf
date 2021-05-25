@@ -17,7 +17,7 @@ locals {
 
 resource "google_storage_bucket_iam_binding" "binding" {
     count = length(local.local_user_role)
-    bucket = local_user_role[count.index].bucket_name
-    role = local_user_role[count.index].role_name
-    members = local_user_role[count.index].members
+    bucket = local.local_user_role[count.index].bucket_name
+    role = local.local_user_role[count.index].role_name
+    members = local.local_user_role[count.index].members
 }
