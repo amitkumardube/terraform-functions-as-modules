@@ -46,7 +46,7 @@ bucket_user_roles = [
 ]
 ```
 
-### output
+### Output
 ```
 local_user_role = [
             {
