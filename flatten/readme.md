@@ -81,3 +81,6 @@ local_user_role = [
             },                        
 ]
 ```
+
+### Documentation from Terraform
+https://www.terraform.io/docs/language/functions/flatten.html
