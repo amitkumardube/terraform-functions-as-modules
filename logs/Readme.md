@@ -26,7 +26,7 @@ terraform version
 
 $env:TF_LOG = '';
 
-$env:TF_LOG_CORE = '';
+$env:TF_LOG_CORE = 'TRACE';
 
 $env:TF_LOG_PATH = './../logs/core_log.txt';
 
@@ -35,6 +35,6 @@ terraform version
 
 $env:TF_LOG = '';
 
-$env:TF_LOG_PROVIDER = '';
+$env:TF_LOG_PROVIDER = 'TRACE';
 
 $env:TF_LOG_PATH = './../logs/provider_log.txt';
