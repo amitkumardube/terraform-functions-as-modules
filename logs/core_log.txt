@@ -1,0 +1,673 @@
+2021-05-30T13:20:14.946+0300 [DEBUG] Adding temp file log sink: C:\Users\User\AppData\Local\Temp\terraform-log967077403
+2021-05-30T13:20:14.947+0300 [INFO]  Terraform version: 0.15.4
+2021-05-30T13:20:14.947+0300 [INFO]  Go runtime version: go1.16.3
+2021-05-30T13:20:14.947+0300 [INFO]  CLI args: []string{"C:\\Users\\User\\Downloads\\terraform_0.14.4_windows_amd64\\terraform.exe", "plan"}
+2021-05-30T13:20:14.948+0300 [TRACE] Stdout is a terminal of width 151
+2021-05-30T13:20:14.948+0300 [TRACE] Stderr is a terminal of width 151
+2021-05-30T13:20:14.948+0300 [TRACE] Stdin is a terminal
+2021-05-30T13:20:14.952+0300 [DEBUG] Attempting to open CLI config file: C:\Users\User\AppData\Roaming\terraform.rc
+2021-05-30T13:20:14.953+0300 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-05-30T13:20:14.954+0300 [INFO]  Loading CLI configuration from C:\Users\User\AppData\Roaming\terraform.d\credentials.tfrc.json
+2021-05-30T13:20:14.958+0300 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-05-30T13:20:14.958+0300 [DEBUG] ignoring non-existing provider search directory C:\Users\User\AppData\Roaming\terraform.d\plugins
+2021-05-30T13:20:14.958+0300 [DEBUG] ignoring non-existing provider search directory C:\Users\User\AppData\Roaming\HashiCorp\Terraform\plugins
+2021-05-30T13:20:14.958+0300 [INFO]  CLI command args: []string{"plan"}
+2021-05-30T13:20:14.958+0300 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2021-05-30T13:20:14.958+0300 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2021-05-30T13:20:14.958+0300 [DEBUG] New state was assigned lineage "97415070-f109-f31b-5102-ecbb18d11fcf"
+2021-05-30T13:20:14.958+0300 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2021-05-30T13:20:14.958+0300 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2021-05-30T13:20:14.958+0300 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2021-05-30T13:20:14.963+0300 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/google v3.69.0 for windows_amd64 at .terraform\providers\registry.terraform.io\hashicorp\google\3.69.0\windows_amd64
+2021-05-30T13:20:14.963+0300 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\google\3.69.0\windows_amd64 as a candidate package for registry.terraform.io/hashicorp/google 3.69.0
+2021-05-30T13:20:15.176+0300 [DEBUG] checking for provisioner in "."
+2021-05-30T13:20:15.176+0300 [DEBUG] checking for provisioner in "C:\\Users\\User\\Downloads\\terraform_0.14.4_windows_amd64"
+2021-05-30T13:20:15.176+0300 [INFO]  Failed to read plugin lock file .terraform\plugins\windows_amd64\lock.json: open .terraform\plugins\windows_amd64\lock.json: The system cannot find the path specified.
+2021-05-30T13:20:15.176+0300 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2021-05-30T13:20:15.176+0300 [INFO]  backend/local: starting Plan operation
+2021-05-30T13:20:15.176+0300 [TRACE] backend/local: requesting state manager for workspace "default"
+2021-05-30T13:20:15.176+0300 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2021-05-30T13:20:15.176+0300 [TRACE] backend/local: requesting state lock for workspace "default"
+2021-05-30T13:20:15.176+0300 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2021-05-30T13:20:15.176+0300 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2021-05-30T13:20:15.176+0300 [TRACE] statemgr.Filesystem: locking terraform.tfstate using LockFileEx
+2021-05-30T13:20:15.184+0300 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2021-05-30T13:20:15.185+0300 [TRACE] backend/local: reading remote state for workspace "default"
+2021-05-30T13:20:15.185+0300 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2021-05-30T13:20:15.185+0300 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2021-05-30T13:20:15.185+0300 [TRACE] statemgr.Filesystem: read nil snapshot
+2021-05-30T13:20:15.185+0300 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2021-05-30T13:20:15.185+0300 [TRACE] backend/local: building context for current working directory
+2021-05-30T13:20:15.186+0300 [TRACE] terraform.NewContext: starting
+2021-05-30T13:20:15.186+0300 [TRACE] terraform.NewContext: loading provider schemas
+2021-05-30T13:20:15.186+0300 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/google"
+2021-05-30T13:20:15.186+0300 [DEBUG] created provider logger: level=off
+2021-05-30T13:20:15.399+0300 [TRACE] GRPCProvider: GetProviderSchema
+2021-05-30T13:20:15.461+0300 [TRACE] GRPCProvider: Close
+2021-05-30T13:20:15.481+0300 [TRACE] terraform.NewContext: complete
+2021-05-30T13:20:15.481+0300 [TRACE] backend/local: finished building terraform.Context
+2021-05-30T13:20:15.481+0300 [TRACE] backend/local: requesting interactive input, if necessary
+2021-05-30T13:20:15.481+0300 [TRACE] Context.Input: Prompting for provider arguments
+2021-05-30T13:20:15.481+0300 [TRACE] Context.Input: Provider provider.google implied by resource block at main.tf:18,1-55
+2021-05-30T13:20:15.481+0300 [TRACE] Context.Input: Input for provider.google: map[string]cty.Value{}
+2021-05-30T13:20:15.481+0300 [TRACE] backend/local: running validation operation
+2021-05-30T13:20:15.481+0300 [INFO]  terraform: building graph: GraphTypeValidate
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] ConfigTransformer: Starting for path:
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.LocalTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.StateTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] StateTransformer: state is empty, so nothing to do
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] AttachResourceConfigTransformer: attaching to "google_storage_bucket_iam_binding.binding" (*terraform.NodeValidatableResource) config from main.tf:18,1-55
+2021-05-30T13:20:15.481+0300 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to google_storage_bucket_iam_binding.binding
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021-05-30T13:20:15.481+0300 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021-05-30T13:20:15.481+0300 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/google"], implied first by google_storage_bucket_iam_binding.binding
+2021-05-30T13:20:15.481+0300 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/google"] serving google_storage_bucket_iam_binding.binding
+2021-05-30T13:20:15.481+0300 [DEBUG] ProviderTransformer: "google_storage_bucket_iam_binding.binding" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2021-05-30T13:20:15.481+0300 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] AttachSchemaTransformer: attaching resource schema to google_storage_bucket_iam_binding.binding
+2021-05-30T13:20:15.481+0300 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/google"]
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-05-30T13:20:15.481+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:15.481+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:15.481+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:15.481+0300 [DEBUG] ReferenceTransformer: "google_storage_bucket_iam_binding.binding" references: [local.local_user_role (expand) local.local_user_role (expand) local.local_user_role (expand) local.local_user_role (expand)]
+2021-05-30T13:20:15.481+0300 [DEBUG] ReferenceTransformer: "var.bucket_user_roles" references: []
+2021-05-30T13:20:15.481+0300 [DEBUG] ReferenceTransformer: "local.local_user_role (expand)" references: [var.bucket_user_roles]
+2021-05-30T13:20:15.481+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/google\"]" references: []
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+    google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+    google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021-05-30T13:20:15.481+0300 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+    google_storage_bucket_iam_binding.binding - *terraform.NodeValidatableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.481+0300 [DEBUG] Starting graph walk: walkValidate
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "var.bucket_user_roles": starting visit (*terraform.NodeRootVariable)
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/google\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "var.bucket_user_roles": visit complete
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "local.local_user_role (expand)": starting visit (*terraform.nodeExpandLocal)
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "local.local_user_role (expand)": expanding dynamic subgraph
+2021-05-30T13:20:15.481+0300 [TRACE] Expanding local: adding local.local_user_role as *terraform.NodeLocal
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "local.local_user_role (expand)": entering dynamic subgraph
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "local.local_user_role": starting visit (*terraform.NodeLocal)
+2021-05-30T13:20:15.481+0300 [DEBUG] created provider logger: level=off
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "local.local_user_role": visit complete
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "local.local_user_role (expand)": dynamic subgraph completed successfully
+2021-05-30T13:20:15.481+0300 [TRACE] vertex "local.local_user_role (expand)": visit complete
+2021-05-30T13:20:15.695+0300 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/google\"]" provider for provider["registry.terraform.io/hashicorp/google"]
+2021-05-30T13:20:15.695+0300 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/google"]: no configuration at all
+2021-05-30T13:20:15.695+0300 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/google\"]": visit complete
+2021-05-30T13:20:15.695+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding": starting visit (*terraform.NodeValidatableResource)
+2021-05-30T13:20:15.695+0300 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-05-30T13:20:15.695+0300 [TRACE] GRPCProvider: GetProviderSchema
+2021-05-30T13:20:15.762+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding": visit complete
+2021-05-30T13:20:15.762+0300 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021-05-30T13:20:15.762+0300 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021-05-30T13:20:15.762+0300 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/google\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021-05-30T13:20:15.762+0300 [TRACE] GRPCProvider: Close
+2021-05-30T13:20:15.778+0300 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/google\"] (close)": visit complete
+2021-05-30T13:20:15.778+0300 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021-05-30T13:20:15.778+0300 [TRACE] vertex "root": visit complete
+2021-05-30T13:20:15.778+0300 [INFO]  backend/local: plan calling Plan
+2021-05-30T13:20:15.778+0300 [INFO]  terraform: building graph: GraphTypePlan
+2021-05-30T13:20:15.778+0300 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021-05-30T13:20:15.778+0300 [TRACE] ConfigTransformer: Starting for path:
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.LocalTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.StateTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] StateTransformer: state is empty, so nothing to do
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] AttachResourceConfigTransformer: attaching to "google_storage_bucket_iam_binding.binding (expand)" (*terraform.nodeExpandPlannableResource) config from main.tf:18,1-55
+2021-05-30T13:20:15.779+0300 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to google_storage_bucket_iam_binding.binding (expand)
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021-05-30T13:20:15.779+0300 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.779+0300 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021-05-30T13:20:15.779+0300 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/google"], implied first by google_storage_bucket_iam_binding.binding (expand)
+2021-05-30T13:20:15.779+0300 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.779+0300 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/google"] serving google_storage_bucket_iam_binding.binding (expand)
+2021-05-30T13:20:15.779+0300 [DEBUG] ProviderTransformer: "google_storage_bucket_iam_binding.binding (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2021-05-30T13:20:15.779+0300 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.779+0300 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/google"]
+2021-05-30T13:20:15.779+0300 [TRACE] AttachSchemaTransformer: attaching resource schema to google_storage_bucket_iam_binding.binding (expand)
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021-05-30T13:20:15.779+0300 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021-05-30T13:20:15.779+0300 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021-05-30T13:20:15.780+0300 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-05-30T13:20:15.780+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:15.780+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:15.780+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:15.780+0300 [DEBUG] ReferenceTransformer: "google_storage_bucket_iam_binding.binding (expand)" references: [local.local_user_role (expand) local.local_user_role (expand) local.local_user_role (expand) local.local_user_role (expand)]
+2021-05-30T13:20:15.780+0300 [DEBUG] ReferenceTransformer: "var.bucket_user_roles" references: []
+2021-05-30T13:20:15.780+0300 [DEBUG] ReferenceTransformer: "local.local_user_role (expand)" references: [var.bucket_user_roles]
+2021-05-30T13:20:15.780+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/google\"]" references: []
+2021-05-30T13:20:15.780+0300 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.780+0300 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021-05-30T13:20:15.780+0300 [TRACE] AttachDependenciesTransformer: google_storage_bucket_iam_binding.binding depends on []
+2021-05-30T13:20:15.780+0300 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021-05-30T13:20:15.780+0300 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2021-05-30T13:20:15.780+0300 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2021-05-30T13:20:15.780+0300 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-05-30T13:20:15.780+0300 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-05-30T13:20:15.780+0300 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021-05-30T13:20:15.780+0300 [TRACE] ForcedCBDTransformer: "google_storage_bucket_iam_binding.binding (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2021-05-30T13:20:15.780+0300 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021-05-30T13:20:15.780+0300 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021-05-30T13:20:15.781+0300 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.781+0300 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021-05-30T13:20:15.781+0300 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+    google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.781+0300 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021-05-30T13:20:15.781+0300 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+    google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.781+0300 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021-05-30T13:20:15.782+0300 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+    local.local_user_role (expand) - *terraform.nodeExpandLocal
+    provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  local.local_user_role (expand) - *terraform.nodeExpandLocal
+    var.bucket_user_roles - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/google"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+    google_storage_bucket_iam_binding.binding (expand) - *terraform.nodeExpandPlannableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/google"] (close) - *terraform.graphNodeCloseProvider
+  var.bucket_user_roles - *terraform.NodeRootVariable
+  ------
+2021-05-30T13:20:15.782+0300 [DEBUG] Starting graph walk: walkPlan
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "var.bucket_user_roles": starting visit (*terraform.NodeRootVariable)
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "var.bucket_user_roles": visit complete
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "local.local_user_role (expand)": starting visit (*terraform.nodeExpandLocal)
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "local.local_user_role (expand)": expanding dynamic subgraph
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/google\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-05-30T13:20:15.782+0300 [TRACE] Expanding local: adding local.local_user_role as *terraform.NodeLocal
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "local.local_user_role (expand)": entering dynamic subgraph
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "local.local_user_role": starting visit (*terraform.NodeLocal)
+2021-05-30T13:20:15.782+0300 [DEBUG] created provider logger: level=off
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "local.local_user_role": visit complete
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "local.local_user_role (expand)": dynamic subgraph completed successfully
+2021-05-30T13:20:15.782+0300 [TRACE] vertex "local.local_user_role (expand)": visit complete
+2021-05-30T13:20:16.004+0300 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/google\"]" provider for provider["registry.terraform.io/hashicorp/google"]
+2021-05-30T13:20:16.004+0300 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/google"]: no configuration at all
+2021-05-30T13:20:16.004+0300 [TRACE] GRPCProvider: GetProviderSchema
+2021-05-30T13:20:16.063+0300 [TRACE] GRPCProvider: ValidateProviderConfig
+2021-05-30T13:20:16.114+0300 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/google\"]" changed the config value, but that value is unused
+2021-05-30T13:20:16.114+0300 [TRACE] GRPCProvider: ConfigureProvider
+2021-05-30T13:20:16.117+0300 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/google\"]": visit complete
+2021-05-30T13:20:16.117+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding (expand)": starting visit (*terraform.nodeExpandPlannableResource)
+2021-05-30T13:20:16.117+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding (expand)": expanding dynamic subgraph
+2021-05-30T13:20:16.117+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding (expand)": entering dynamic subgraph
+2021-05-30T13:20:16.117+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding": starting visit (*terraform.NodePlannableResource)
+2021-05-30T13:20:16.117+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding": expanding dynamic subgraph
+2021-05-30T13:20:16.117+0300 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2021-05-30T13:20:16.117+0300 [TRACE] ResourceCountTransformer: adding google_storage_bucket_iam_binding.binding[0] as *terraform.NodePlannableResourceInstance
+2021-05-30T13:20:16.117+0300 [TRACE] ResourceCountTransformer: adding google_storage_bucket_iam_binding.binding[1] as *terraform.NodePlannableResourceInstance
+2021-05-30T13:20:16.118+0300 [TRACE] ResourceCountTransformer: adding google_storage_bucket_iam_binding.binding[2] as *terraform.NodePlannableResourceInstance
+2021-05-30T13:20:16.118+0300 [TRACE] ResourceCountTransformer: adding google_storage_bucket_iam_binding.binding[3] as *terraform.NodePlannableResourceInstance
+2021-05-30T13:20:16.118+0300 [TRACE] ResourceCountTransformer: adding google_storage_bucket_iam_binding.binding[4] as *terraform.NodePlannableResourceInstance
+2021-05-30T13:20:16.118+0300 [TRACE] ResourceCountTransformer: adding google_storage_bucket_iam_binding.binding[5] as *terraform.NodePlannableResourceInstance
+2021-05-30T13:20:16.118+0300 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  google_storage_bucket_iam_binding.binding[0] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[1] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[2] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[3] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[4] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[5] - *terraform.NodePlannableResourceInstance
+  ------
+2021-05-30T13:20:16.118+0300 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceCountTransformer
+2021-05-30T13:20:16.118+0300 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceCountTransformer (no changes)
+2021-05-30T13:20:16.118+0300 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-05-30T13:20:16.118+0300 [DEBUG] Resource instance state not found for node "google_storage_bucket_iam_binding.binding[3]", instance google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.118+0300 [DEBUG] Resource instance state not found for node "google_storage_bucket_iam_binding.binding[4]", instance google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.118+0300 [DEBUG] Resource instance state not found for node "google_storage_bucket_iam_binding.binding[5]", instance google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.118+0300 [DEBUG] Resource instance state not found for node "google_storage_bucket_iam_binding.binding[0]", instance google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.118+0300 [DEBUG] Resource instance state not found for node "google_storage_bucket_iam_binding.binding[1]", instance google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.118+0300 [DEBUG] Resource instance state not found for node "google_storage_bucket_iam_binding.binding[2]", instance google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.118+0300 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-05-30T13:20:16.118+0300 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-05-30T13:20:16.118+0300 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-05-30T13:20:16.118+0300 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [DEBUG] ReferenceTransformer: "google_storage_bucket_iam_binding.binding[3]" references: []
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [DEBUG] ReferenceTransformer: "google_storage_bucket_iam_binding.binding[4]" references: []
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [DEBUG] ReferenceTransformer: "google_storage_bucket_iam_binding.binding[5]" references: []
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [DEBUG] ReferenceTransformer: "google_storage_bucket_iam_binding.binding[0]" references: []
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [DEBUG] ReferenceTransformer: "google_storage_bucket_iam_binding.binding[1]" references: []
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "local.local_user_role"
+2021-05-30T13:20:16.118+0300 [INFO]  ReferenceTransformer: reference not found: "count.index"
+2021-05-30T13:20:16.118+0300 [DEBUG] ReferenceTransformer: "google_storage_bucket_iam_binding.binding[2]" references: []
+2021-05-30T13:20:16.118+0300 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2021-05-30T13:20:16.119+0300 [TRACE] Executing graph transform *terraform.RootTransformer
+2021-05-30T13:20:16.119+0300 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  google_storage_bucket_iam_binding.binding[0] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[1] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[2] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[3] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[4] - *terraform.NodePlannableResourceInstance
+  google_storage_bucket_iam_binding.binding[5] - *terraform.NodePlannableResourceInstance
+  root - terraform.graphNodeRoot
+    google_storage_bucket_iam_binding.binding[0] - *terraform.NodePlannableResourceInstance
+    google_storage_bucket_iam_binding.binding[1] - *terraform.NodePlannableResourceInstance
+    google_storage_bucket_iam_binding.binding[2] - *terraform.NodePlannableResourceInstance
+    google_storage_bucket_iam_binding.binding[3] - *terraform.NodePlannableResourceInstance
+    google_storage_bucket_iam_binding.binding[4] - *terraform.NodePlannableResourceInstance
+    google_storage_bucket_iam_binding.binding[5] - *terraform.NodePlannableResourceInstance
+  ------
+2021-05-30T13:20:16.119+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding": entering dynamic subgraph
+2021-05-30T13:20:16.119+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[0]": starting visit (*terraform.NodePlannableResourceInstance)
+2021-05-30T13:20:16.119+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[3]": starting visit (*terraform.NodePlannableResourceInstance)
+2021-05-30T13:20:16.119+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[1]": starting visit (*terraform.NodePlannableResourceInstance)
+2021-05-30T13:20:16.119+0300 [TRACE] readResourceInstanceState: reading state for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.119+0300 [TRACE] readResourceInstanceState: no state present for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.119+0300 [TRACE] readResourceInstanceState: reading state for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.119+0300 [TRACE] readResourceInstanceState: no state present for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.120+0300 [TRACE] readResourceInstanceState: reading state for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.120+0300 [TRACE] readResourceInstanceState: no state present for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.120+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[4]": starting visit (*terraform.NodePlannableResourceInstance)
+2021-05-30T13:20:16.120+0300 [TRACE] readResourceInstanceState: reading state for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.120+0300 [TRACE] readResourceInstanceState: no state present for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.120+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[5]": starting visit (*terraform.NodePlannableResourceInstance)
+2021-05-30T13:20:16.120+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[2]": starting visit (*terraform.NodePlannableResourceInstance)
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResourceInstance.refresh for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.120+0300 [DEBUG] refresh: google_storage_bucket_iam_binding.binding[3]: no state, so not refreshing
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.120+0300 [TRACE] readResourceInstanceState: reading state for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.120+0300 [TRACE] readResourceInstanceState: no state present for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.120+0300 [TRACE] readResourceInstanceState: reading state for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.120+0300 [TRACE] readResourceInstanceState: no state present for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.120+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResourceInstance.refresh for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.121+0300 [DEBUG] refresh: google_storage_bucket_iam_binding.binding[4]: no state, so not refreshing
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResourceInstance.refresh for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.121+0300 [TRACE] Re-validating config for "google_storage_bucket_iam_binding.binding[4]"
+2021-05-30T13:20:16.121+0300 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResourceInstance.refresh for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.121+0300 [DEBUG] refresh: google_storage_bucket_iam_binding.binding[0]: no state, so not refreshing
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.121+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.121+0300 [TRACE] Re-validating config for "google_storage_bucket_iam_binding.binding[3]"
+2021-05-30T13:20:16.121+0300 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResourceInstance.refresh for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.122+0300 [DEBUG] refresh: google_storage_bucket_iam_binding.binding[1]: no state, so not refreshing
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.122+0300 [TRACE] Re-validating config for "google_storage_bucket_iam_binding.binding[0]"
+2021-05-30T13:20:16.122+0300 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-05-30T13:20:16.122+0300 [DEBUG] refresh: google_storage_bucket_iam_binding.binding[5]: no state, so not refreshing
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.122+0300 [TRACE] Re-validating config for "google_storage_bucket_iam_binding.binding[5]"
+2021-05-30T13:20:16.122+0300 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.122+0300 [TRACE] GRPCProvider: PlanResourceChange
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResourceInstance.refresh for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.122+0300 [DEBUG] refresh: google_storage_bucket_iam_binding.binding[2]: no state, so not refreshing
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.122+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.122+0300 [TRACE] GRPCProvider: PlanResourceChange
+2021-05-30T13:20:16.123+0300 [TRACE] GRPCProvider: PlanResourceChange
+2021-05-30T13:20:16.123+0300 [TRACE] GRPCProvider: PlanResourceChange
+2021-05-30T13:20:16.123+0300 [TRACE] Re-validating config for "google_storage_bucket_iam_binding.binding[2]"
+2021-05-30T13:20:16.123+0300 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-05-30T13:20:16.123+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.123+0300 [TRACE] Re-validating config for "google_storage_bucket_iam_binding.binding[1]"
+2021-05-30T13:20:16.123+0300 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-05-30T13:20:16.124+0300 [TRACE] GRPCProvider: PlanResourceChange
+2021-05-30T13:20:16.124+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.124+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.124+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.124+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.124+0300 [TRACE] GRPCProvider: PlanResourceChange
+2021-05-30T13:20:16.124+0300 [TRACE] writeChange: recorded Create change for google_storage_bucket_iam_binding.binding[5]
+2021-05-30T13:20:16.124+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[5]": visit complete
+2021-05-30T13:20:16.124+0300 [TRACE] writeChange: recorded Create change for google_storage_bucket_iam_binding.binding[4]
+2021-05-30T13:20:16.124+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[4]": visit complete
+2021-05-30T13:20:16.124+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.124+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.124+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.124+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.124+0300 [TRACE] writeChange: recorded Create change for google_storage_bucket_iam_binding.binding[0]
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[0]": visit complete
+2021-05-30T13:20:16.125+0300 [TRACE] writeChange: recorded Create change for google_storage_bucket_iam_binding.binding[3]
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[3]": visit complete
+2021-05-30T13:20:16.125+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.125+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.125+0300 [TRACE] writeChange: recorded Create change for google_storage_bucket_iam_binding.binding[2]
+2021-05-30T13:20:16.125+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.125+0300 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[2]": visit complete
+2021-05-30T13:20:16.125+0300 [TRACE] writeChange: recorded Create change for google_storage_bucket_iam_binding.binding[1]
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding[1]": visit complete
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "root": visit complete
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding": dynamic subgraph completed successfully
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding": visit complete
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding (expand)": dynamic subgraph completed successfully
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "google_storage_bucket_iam_binding.binding (expand)": visit complete
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/google\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021-05-30T13:20:16.125+0300 [TRACE] GRPCProvider: Close
+2021-05-30T13:20:16.125+0300 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021-05-30T13:20:16.148+0300 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/google\"] (close)": visit complete
+2021-05-30T13:20:16.148+0300 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021-05-30T13:20:16.148+0300 [TRACE] vertex "root": visit complete
+2021-05-30T13:20:16.148+0300 [INFO]  backend/local: plan operation completed
+2021-05-30T13:20:16.177+0300 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2021-05-30T13:20:16.178+0300 [TRACE] statemgr.Filesystem: unlocked by closing terraform.tfstate

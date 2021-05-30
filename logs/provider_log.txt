@@ -1,0 +1,41 @@
+2021-05-30T13:23:49.294+0300 [INFO]  provider: configuring client automatic mTLS
+2021-05-30T13:23:49.335+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe]
+2021-05-30T13:23:49.335+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe pid=7976
+2021-05-30T13:23:49.335+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe
+2021-05-30T13:23:49.388+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: configuring server automatic mTLS: timestamp=2021-05-30T13:23:49.388+0300
+2021-05-30T13:23:49.439+0300 [DEBUG] provider: using plugin: version=5
+2021-05-30T13:23:49.439+0300 [DEBUG] provider.terraform-provider-google_v3.69.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2021-05-30T13:23:49.439+0300
+2021-05-30T13:23:49.500+0300 [TRACE] provider.stdio: waiting for stdio data
+2021-05-30T13:23:49.561+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-05-30T13:23:49.583+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe pid=7976
+2021-05-30T13:23:49.583+0300 [DEBUG] provider: plugin exited
+2021-05-30T13:23:49.586+0300 [INFO]  provider: configuring client automatic mTLS
+2021-05-30T13:23:49.626+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe]
+2021-05-30T13:23:49.626+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe pid=16060
+2021-05-30T13:23:49.626+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe
+2021-05-30T13:23:49.686+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: configuring server automatic mTLS: timestamp=2021-05-30T13:23:49.686+0300
+2021-05-30T13:23:49.739+0300 [DEBUG] provider: using plugin: version=5
+2021-05-30T13:23:49.739+0300 [DEBUG] provider.terraform-provider-google_v3.69.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2021-05-30T13:23:49.739+0300
+2021-05-30T13:23:49.796+0300 [TRACE] provider.stdio: waiting for stdio data
+2021-05-30T13:23:49.861+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-05-30T13:23:49.881+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe pid=16060
+2021-05-30T13:23:49.881+0300 [DEBUG] provider: plugin exited
+2021-05-30T13:23:49.881+0300 [INFO]  provider: configuring client automatic mTLS
+2021-05-30T13:23:49.921+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe]
+2021-05-30T13:23:49.931+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe pid=1744
+2021-05-30T13:23:49.931+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe
+2021-05-30T13:23:49.982+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: configuring server automatic mTLS: timestamp=2021-05-30T13:23:49.982+0300
+2021-05-30T13:23:50.026+0300 [DEBUG] provider.terraform-provider-google_v3.69.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2021-05-30T13:23:50.026+0300
+2021-05-30T13:23:50.031+0300 [DEBUG] provider: using plugin: version=5
+2021-05-30T13:23:50.089+0300 [TRACE] provider.stdio: waiting for stdio data
+2021-05-30T13:23:50.202+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: 2021/05/30 13:23:50 [INFO] Authenticating using DefaultClient...: timestamp=2021-05-30T13:23:50.202+0300
+2021-05-30T13:23:50.202+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: 2021/05/30 13:23:50 [INFO]   -- Scopes: [https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloud-identity https://www.googleapis.com/auth/ndev.clouddns.readwrite https://www.googleapis.com/auth/devstorage.full_control https://www.googleapis.com/auth/userinfo.email]: timestamp=2021-05-30T13:23:50.202+0300
+2021-05-30T13:23:50.207+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: 2021/05/30 13:23:50 [WARN] Truncating attribute path of 0 diagnostics for TypeSet: timestamp=2021-05-30T13:23:50.207+0300
+2021-05-30T13:23:50.207+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: 2021/05/30 13:23:50 [WARN] Truncating attribute path of 0 diagnostics for TypeSet: timestamp=2021-05-30T13:23:50.207+0300
+2021-05-30T13:23:50.207+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: 2021/05/30 13:23:50 [WARN] Truncating attribute path of 0 diagnostics for TypeSet: timestamp=2021-05-30T13:23:50.207+0300
+2021-05-30T13:23:50.207+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: 2021/05/30 13:23:50 [WARN] Truncating attribute path of 0 diagnostics for TypeSet: timestamp=2021-05-30T13:23:50.207+0300
+2021-05-30T13:23:50.207+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: 2021/05/30 13:23:50 [WARN] Truncating attribute path of 0 diagnostics for TypeSet: timestamp=2021-05-30T13:23:50.207+0300
+2021-05-30T13:23:50.207+0300 [INFO]  provider.terraform-provider-google_v3.69.0_x5.exe: 2021/05/30 13:23:50 [WARN] Truncating attribute path of 0 diagnostics for TypeSet: timestamp=2021-05-30T13:23:50.207+0300
+2021-05-30T13:23:50.210+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-05-30T13:23:50.233+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/3.69.0/windows_amd64/terraform-provider-google_v3.69.0_x5.exe pid=1744
+2021-05-30T13:23:50.233+0300 [DEBUG] provider: plugin exited
