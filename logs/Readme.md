@@ -16,17 +16,25 @@
 
 ### generating LOGS for both provider and terraform
 terraform version
+
 $env:TF_LOG = 'TRACE';
+
 $env:TF_LOG_PATH = './../logs/core_provider_log.txt';
 
 ### generating LOGS only for terraform
 terraform version
+
 $env:TF_LOG = '';
+
 $env:TF_LOG_CORE = '';
+
 $env:TF_LOG_PATH = './../logs/core_log.txt';
 
 ### generating LOGS only for providers
 terraform version
+
 $env:TF_LOG = '';
+
 $env:TF_LOG_PROVIDER = '';
+
 $env:TF_LOG_PATH = './../logs/provider_log.txt';
